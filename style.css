@@ -1,0 +1,93 @@
+body{
+    background: #ccc;
+}
+.btn {
+    display: inline-block;
+    /* background-color: white; */
+    border: 2px solid white;
+    font-size: 11px;
+    color: black;
+    width: 80px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .3s;
+  }
+
+  .btn:hover{
+    background-color: white;
+    color: black;
+  }
+  .nav-left a{
+    transition: .3s;
+  }
+  .nav-left a:hover{
+    color: black;
+  }
+
+  .image img{
+    width: 20%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .btncontent{
+    padding: 20px;
+    font-size: 11px;
+    width: 150px;
+    border: none;
+    background: #252525;
+    box-shadow: 5px 10px 20px rgba(252, 252, 252, 0.699);
+    font-weight: 700;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    transition: .5s;
+  }
+  a {
+    z-index: 10;
+    position: relative; /* Pastikan elemen ini berada di atas elemen lainnya */
+}
+  .btncontent:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+  }
+  .content{
+    height: 100vh;
+    position: relative;
+    top: 50px;
+  }
+  .content2{
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .elemnt{
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 50px;
+    border-radius: 50px;
+}
+.elemnt img{
+    width: 70px;
+}
+
+.p-3{
+    position: relative;
+    top: 10px;
+}
+
+@media (max-width: 480px) {
+  .nav-left {
+    display: flex;
+    flex-direction: row; 
+    gap: 15px;
+  }
+  .nav-link:hover {
+    text-decoration: underline; /* Teks digarisbawahi saat dihover */
+  }
+}
