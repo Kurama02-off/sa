@@ -2,6 +2,10 @@ body{
     background: #ccc;
     max-height: 100vh;
 }
+.navbar{
+  position: relative;
+  top: 20px;
+}
 .btn {
     display: inline-block;
     /* background-color: white; */
@@ -89,6 +93,43 @@ body{
 
 .hal-3{
   min-height: 100vh;
+}
+.copy-feedback {
+  position: absolute;
+  /* right: 10px; */
+  left: 250px;
+  top: -25px;
+  /* background-color: #6c63ff; */
+  color: #252525;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+.copy-feedback.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#copy-email {
+  cursor: pointer;
+  padding: 5px 10px;
+  /* background-color: #6c63ff; */
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #252525;
+  transition: background-color 0.3s ease;
+}
+
+#copy-email:hover {
+  background-color: #252525;
+  color: white;
+  border: 1px solid #252525;
+
 }
 
 @media (max-width: 480px) {
