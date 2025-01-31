@@ -1,5 +1,6 @@
 body{
     background: #ccc;
+    max-height: 100vh;
 }
 .btn {
     display: inline-block;
@@ -80,6 +81,15 @@ body{
     position: relative;
     top: 10px;
 }
+.content-3 img{
+  position: relative;
+  top: 20px;
+  width: 50%;
+}
+
+.hal-3{
+  min-height: 100vh;
+}
 
 @media (max-width: 480px) {
   .nav-left {
@@ -91,3 +101,24 @@ body{
     text-decoration: underline; /* Teks digarisbawahi saat dihover */
   }
 }
+
+@media (max-width: 768px) {
+  .content {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .content2 .elemnt {
+      gap: 10px;
+  }
+}
+/* 
+@media (min-width: 992px) { 
+  .row {
+    gap: 1rem !important; 
+  }
+  .content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+} */
